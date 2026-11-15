@@ -1,12 +1,12 @@
-# SmartRasoi: AI-Powered Smart Kitchen & Waste Minimizer
+# Kitchen Inventory & Food Waste Minimization System
 
-SmartRasoi is a full-stack, AI-driven kitchen management and food waste reduction platform designed to help commercial kitchens, restaurants, and food service operators monitor inventory in real time, classify produce freshness using computer vision, optimize menus, and dynamically generate surplus-driven recipes using generative AI.
+The **Kitchen Inventory & Food Waste Minimization System** is a full-stack, AI-driven kitchen management and food waste reduction platform designed to help commercial kitchens, restaurants, and food service operators monitor inventory in real time, classify produce freshness using computer vision, optimize menus, and dynamically generate surplus-driven recipes using generative AI.
 
 ---
 
 ## Project Overview
 
-Food service businesses face persistent operational challenges: ingredients spoil before use, high-cost surplus items go unmonitored, freshness inspections are manual, and menu planning frequently fails to utilize near-expiry stock. SmartRasoi addresses these inefficiencies by integrating real-time database tracking with specialized machine learning and generative artificial intelligence microservices.
+Food service businesses face persistent operational challenges: ingredients spoil before use, high-cost surplus items go unmonitored, freshness inspections are manual, and menu planning frequently fails to utilize near-expiry stock. The Kitchen Inventory & Food Waste Minimization System addresses these inefficiencies by integrating real-time database tracking with specialized machine learning and generative artificial intelligence microservices.
 
 The system combines:
 1. **Interactive Real-Time Inventory Tracking:** Built on Next.js 15 and Supabase (PostgreSQL), providing real-time data synchronization for stock levels, shelf-life countdowns, and automated expiration status flagging (`optimal`, `low`, `expiring`).
@@ -28,7 +28,7 @@ Commercial kitchens lose thousands of dollars each month and produce immense eco
 
 ## Proposed Solution
 
-SmartRasoi bridges the gap between raw kitchen inventory and daily culinary production through an interconnected four-layer ecosystem:
+The Kitchen Inventory & Food Waste Minimization System bridges the gap between raw kitchen inventory and daily culinary production through an interconnected four-layer ecosystem:
 - **Client Presentation Tier (Next.js):** Provides kitchen staff and managers with reactive dashboards for inventory auditing, menu cataloging, and image-based freshness checks.
 - **Orchestration API Gateway (Node.js & Express):** Centralizes requests, handles file uploads via memory buffers, and routes tasks to the appropriate microservices.
 - **AI Microservices Layer (Python & Flask):** Hosts distinct AI models for computer vision classification, LLM-based recipe generation, and gradient-boosted waste prediction.
@@ -153,10 +153,10 @@ flowchart TD
 
 ## System Architecture
 
-SmartRasoi implements a decoupled microservices and tiered client-server architecture:
+The system implements a decoupled microservices and tiered client-server architecture:
 
 ```
-SmartRasoi/
+Kitchen_Inventory_and_Food_Waste_Minimization_System/
 ├── Frontend (Port 3000)      --> Next.js 15 (React 19, TypeScript, Tailwind CSS, ShadCN)
 ├── Backend Gateway (Port 8080) --> Express.js (Middleware, Multer, Axios routing)
 ├── AI Services (Port 5000)   --> Python Flask Microservices
@@ -219,7 +219,7 @@ SmartRasoi/
 ## Project Structure
 
 ```
-SmartRasoi/
+Kitchen_Inventory_and_Food_Waste_Minimization_System/
 ├── README.md                                  # Root project documentation
 ├── ai/                                        # Python AI and Machine Learning microservices
 │   ├── Dish Recommandation/
@@ -394,7 +394,7 @@ $env:GEMINI_API_KEY="your-gemini-api-key"
 
 ## How to Run
 
-Because SmartRasoi utilizes microservices across distinct runtimes, launch the components in separate terminal windows.
+Because the system utilizes microservices across distinct runtimes, launch the components in separate terminal windows.
 
 ### Step 1: Install Dependencies
 
@@ -568,7 +568,7 @@ Open your browser and navigate to `http://localhost:3000`.
 
 ## Database & Data Management
 
-SmartRasoi interacts with two distinct database architectures:
+The system interacts with two distinct database architectures:
 
 ### 1. Supabase (PostgreSQL) — Active Frontend Client
 Directly queried by Next.js using `@supabase/supabase-js`.
@@ -687,7 +687,7 @@ All metrics reported below are calculated directly from verified project files:
 
 ## Contributing
 
-1. Fork the repository on GitHub: `https://github.com/KrishPatel-AI/SmartRasoi`
+1. Fork the repository on GitHub: `https://github.com/KrishPatel-AI/kitchen-inventory-and-food-waste-minimization-system`
 2. Create a feature branch:
    ```bash
    git checkout -b feature/your-feature-name
